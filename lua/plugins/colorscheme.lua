@@ -1,12 +1,23 @@
+-- return {
+--   -- add dracula
+--     "scottmckendry/cyberdream.nvim",
+--     lazy = false,
+--     priority = 1000,
+--   -- Configure LazyVim to load dracula
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       colorscheme = "dracul",
+--     },
+--   },
+-- }
+--
 return {
-  -- add dracula
-  { "Mofiqul/dracula.nvim" },
-
-  -- Configure LazyVim to load dracula
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "dracula",
-    },
-  },
+ "catppuccin/nvim",
+  name = "catppuccin",
+  priority = 1000,
+  opts = {
+    flavour = "latte",
+  }
 }
+
