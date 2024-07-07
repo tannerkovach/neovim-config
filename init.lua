@@ -69,10 +69,12 @@ vim.keymap.set('n', '<leader>tn', '<cmd>tabn<CR>', { desc = 'Go to next tab' }) 
 vim.keymap.set('n', '<leader>tp', '<cmd>tabp<CR>', { desc = 'Go to previous tab' }) --  go to previous tab
 vim.keymap.set('n', '<leader>tf', '<cmd>tabnew %<CR>', { desc = 'Open current buffer in new tab' }) --  move current buffer to new tab
 
-vim.keymap.set('n', 'ss', ':w<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', 'SS', ':w<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'YY', ':%y<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'VV', 'ggVG', { noremap = true, silent = true })
 vim.keymap.set('n', 'DD', 'ggVGd', { noremap = true, silent = true })
+
+-- vim.keymap.set({ 'x', 'v', 'n' }, 'S', '', { desc = 'Remove default S functionality' }) -- split window vertically
 
 vim.keymap.set({ 'x', 'v' }, 'p', '"_dP', { noremap = true, silent = true })
 
